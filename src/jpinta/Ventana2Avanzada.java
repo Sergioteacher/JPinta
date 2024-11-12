@@ -51,6 +51,7 @@ private Image fotoEscalada;
         txtEstado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ventana2 Avanzada");
 
         buttonGroupOption.add(optionEscala);
         optionEscala.setText("%");

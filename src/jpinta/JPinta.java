@@ -22,7 +22,7 @@ public class JPinta {
         System.out.println("Se han pasado " + args.length + " argumentos.");
 
         int optionT=0;
-        String[] optionesVentana={"Básica", "Avanzada","Visor"};
+        String[] optionesVentana={"Básica", "Avanzada","Visor","Redimensiona"};
         optionT = JOptionPane.showOptionDialog(null, "Control de presentación de imágenes", "Seleccione VENTANA de arranque", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, optionesVentana, "Básica");
 
 //sólo creo el objto que necesito.
@@ -35,6 +35,9 @@ public class JPinta {
         }else if( optionT == 2 ){
             Ventana3Visor Ventana3 = new Ventana3Visor();
             Ventana3.setVisible(true);
+        }else if( optionT == 3 ){
+                    Ventana4Redimensiona Ventana4 = new Ventana4Redimensiona();
+                    Ventana4.setVisible(true);
         }else{
             System.out.println("Descartado lanzar alguna ventana, se sale ...");
         }
